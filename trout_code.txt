@@ -1,0 +1,23 @@
+sub irc_ctcp_action {
+    my ( $kernel, $who, $where, $msg ) = @_[ KERNEL, ARG0, ARG1, ARG2 ];
+    my $nick = ( split /!/, $who )[0];
+    my $channel = $where->[0];
+    my $irc = $_[HEAP]->{irc};
+        if ($msg =~ /trout/i) {
+           my $troutrw ;
+           open(TROUTREC, "<troutr.txt") or warn "Error $!";
+           my $troutr = <TROUTREC>;
+           close TROUTREC;
+           chomp $troutr ;
+           $troutrw = $troutr+1 ;
+           open(TROUTREC,">troutr.txt") or warn "Error $!";
+           print TROUTREC $troutrw ;
+           close TROUTREC;
+           my $trout1 = random_line('trout1.txt');
+           chop($trout1);
+           my $trout2 = random_line('trout2.txt');
+           chop($trout2);
+           my $troutmsg = "$trout1 the trout from $nick and $trout2 back in the river. ($troutrw trout saved since $trouty)";
+           $irc->yield('ctcp', $channel , "ACTION " . $troutmsg );
+        }
+}
