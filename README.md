@@ -1,5 +1,5 @@
 # troutreclaimer
-A script for AdiIRC/mIRC to reclaim abused trout used in slaps.
+A script for perl bots &or AdiIRC/mIRC to reclaim abused trout used in slaps.
 
 -=-
 
