@@ -3,7 +3,7 @@ A script for eggdrop/perl bots & AdiIRC/mIRC to reclaim abused trout used in sla
 
 -=-
 
-For eggdrop put troutrec.tcl in your scripts directory and add "source/troutrec.tcl" to your eggdrop.conf.
+For eggdrop put troutrec.tcl & troutr.txt in your scripts directory and add "source/troutrec.tcl" to your eggdrop.conf.
 
 -=-
 
