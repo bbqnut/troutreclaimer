@@ -11,4 +11,4 @@ For perl bots use trout1.txt, trout2.txt, troutr.txt & add the code within trout
 
 -=-
 
-For AdiIRC/mIRC use trout1.txt, trout2.txt & troutreclaim.ini in your scripts directory.
+For AdiIRC/mIRC use trout1.txt, trout2.txt & troutreclaim.ini in your scripts directory and load troutreclaim.ini in AdiIRC or mIRC.
